@@ -1,0 +1,5 @@
+name = LoLitems
+version = 1.0
+author = Daikon
+displayName = League of Legends Items
+tModLoaderVersion = 2024.12
