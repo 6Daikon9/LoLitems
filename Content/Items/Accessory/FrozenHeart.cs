@@ -6,7 +6,7 @@ using Terraria.Localization;
 
 namespace LoLitems.Content.Items.Accessory
 {	
-	public class Thornmail : ModItem
+	public class FrozenHeart : ModItem
     {
         public override void SetDefaults()
         {
@@ -20,23 +20,15 @@ namespace LoLitems.Content.Items.Accessory
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.statDefense += 8; // Добавляет 8 защиты (armor)
-            player.statLifeMax2 += 15; // Увеличивает максимальное здоровье на 15
-
-            MyModPlayer modPlayer = player.GetModPlayer<MyModPlayer>();
-
-            if (modPlayer.timeSinceHit >= modPlayer.hitCooldown && modPlayer.receivedBasicAttack)
-            {
-                modPlayer.ApplyOnHitDamage();
-                modPlayer.receivedBasicAttack = false;
-            }
-            modPlayer.timeSinceHit++;
+            player.statManaMax2 += 40; // Увеличивает максимальную ману на 40
+            // player.*** += 20; // Добавили 20 (ability haste)
         }
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.IronBar, 10);
-            recipe.AddIngredient(ItemID.LifeCrystal, 1); // Лайф Кристалл
-            recipe.AddIngredient(ItemID.CactusBreastplate, 1); //Кактусовый нагрудник
+            recipe.AddIngredient(ItemID.IceBlock, 20);  // Лед
+            recipe.AddIngredient(ItemID.ManaCrystal, 1);  // Мана кристал
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
         }

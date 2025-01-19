@@ -1,0 +1,55 @@
+Items: {
+	Thornmail: {
+		DisplayName: Thornmail
+		Tooltip:
+			'''
+			8 deffence 
+			When struck by a basic attack on-hit, deal 20 (+ 10% bonus armor)
+			'''
+	}
+
+	FrozenHeart: {
+		DisplayName: Frozen Heart
+		Tooltip:
+		'''
+		8 deffence
+		40 mana
+		'''
+	}
+
+	Heartsteel: {
+		DisplayName: Heartsteel
+		Tooltip: 
+		'''
+		90 health
+		+100% base health regeneration
+		'''
+	}
+
+	Warmog: {
+		DisplayName: Warmog
+		Tooltip: 
+		'''
+		100 health
+		+100% base health regeneration
+		'''
+	}
+
+	Botruk: {
+		DisplayName: Botruk
+		Tooltip: 
+		'''
+		+20% non magic damage
+		+25% attack speed
+		'''
+	}
+
+	Liandry: {
+		DisplayName: Liandry's Torment
+		Tooltip: 
+		'''
+		+50% magic damage
+		30 health
+		'''
+	}
+}

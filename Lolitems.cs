@@ -1,8 +1,8 @@
 using Terraria.ModLoader;
 
 namespace LoLitems
-{
-    public class LoLitems : Mod
+{	
+	public class MainMod : Mod
     {
         public override void Load()
         {
