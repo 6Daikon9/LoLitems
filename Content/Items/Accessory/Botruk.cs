@@ -23,7 +23,7 @@ namespace LoLitems.Content.Items.Accessory
             player.GetDamage(DamageClass.Ranged) += 0.20f; // Увеличивает урон дальнего боя на 20%
             player.GetDamage(DamageClass.Summon) += 0.20f; // Увеличивает урон от призванных существ на 20%
             player.GetDamage(DamageClass.Throwing) += 0.20f; // Увеличивает урон метательными оружиями на 20%
-
+            
             player.GetAttackSpeed(DamageClass.Melee) += 0.25f; // Увеличивает скорость атаки ближнего боя на 25%
             player.GetAttackSpeed(DamageClass.Ranged) += 0.25f; // Увеличивает скорость атаки дальнего боя на 25%
             // player.GetModPlayer<MyModPlayer>().lifeSteal += 0.10f; // +10% лайфстила
