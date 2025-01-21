@@ -7,14 +7,16 @@
 
   <ItemGroup>
     <Reference Include="Terraria">
-      <HintPath>C:\!Down\Steam\steamapps\common\tModLoader\Terraria.dll</HintPath>
+      <HintPath>Lib/ModLoader/Terraria.dll</HintPath>
     </Reference>
     <Reference Include="Terraria.ModLoader">
-      <HintPath>C:\!Down\Steam\steamapps\common\tModLoader\tModLoader.dll</HintPath>
+      <HintPath>Lib/ModLoader/tModLoader.dll</HintPath>
     </Reference>
   </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
   </ItemGroup>
 
 </Project>

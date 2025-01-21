@@ -1,12 +1,10 @@
-using System.Linq;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.Localization;
+using Terraria.ID;
 
 namespace LoLitems.Content.Items.Accessory
-{	
-	public class Thornmail : ModItem
+{
+    public class Thornmail : ModItem
     {
         public override void SetDefaults()
         {
@@ -14,29 +12,21 @@ namespace LoLitems.Content.Items.Accessory
             Item.height = 32;
             Item.accessory = true;
             Item.rare = 3;
-            Item.value = Item.sellPrice(gold: 1); 
+            Item.value = Item.sellPrice(gold: 1);
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statDefense += 8; // Добавляет 8 защиты (armor)
-            player.statLifeMax2 += 15; // Увеличивает максимальное здоровье на 15
-
-            MyModPlayer modPlayer = player.GetModPlayer<MyModPlayer>();
-
-            if (modPlayer.timeSinceHit >= modPlayer.hitCooldown && modPlayer.receivedBasicAttack)
-            {
-                modPlayer.ApplyOnHitDamage();
-                modPlayer.receivedBasicAttack = false;
-            }
-            modPlayer.timeSinceHit++;
+            player.statDefense += 8;  // Добавляем 8 защиты
+            player.statLifeMax2 += 15;  // Увеличиваем максимальное здоровье на 15
         }
+
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.IronBar, 10);
-            recipe.AddIngredient(ItemID.LifeCrystal, 1); // Лайф Кристалл
-            recipe.AddIngredient(ItemID.CactusBreastplate, 1); //Кактусовый нагрудник
+            recipe.AddIngredient(ItemID.LifeCrystal, 1);
+            recipe.AddIngredient(ItemID.CactusBreastplate, 1);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
         }

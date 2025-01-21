@@ -1,8 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
-using System.Linq;
-using Microsoft.Xna.Framework;
+using Terraria.Localization;
 
 namespace LoLitems.Content.Items.Accessory
 {
@@ -31,7 +30,7 @@ namespace LoLitems.Content.Items.Accessory
             player.statLifeMax2 += 30; // Увеличиваем максимальное здоровье на 30
 
             // Обновляем эффект горения
-            if (isBurning && burnTime > 0 && Main.GameUpdateCount % 60 == 0)
+            if (isBurning && burnTime > 0)
             {
                 ApplyBurnDamage();
             }
@@ -40,7 +39,7 @@ namespace LoLitems.Content.Items.Accessory
         // Метод для применения горения
         private void ApplyBurn(NPC target)
         {
-            if (target != null)
+            if (target != null && !isBurning)
             {
                 isBurning = true;
                 burnTime = BurnDuration;
@@ -54,6 +53,7 @@ namespace LoLitems.Content.Items.Accessory
         {
             if (isBurning && burningTarget != null)
             {
+                // Наносим урон от горения
                 NPC.HitInfo burnHitInfo = new NPC.HitInfo()
                 {
                     Damage = burnDamage,
@@ -68,6 +68,7 @@ namespace LoLitems.Content.Items.Accessory
 
                 burnTime--;
 
+                // Прекращаем горение, если время истекло
                 if (burnTime <= 0)
                 {
                     isBurning = false;
@@ -83,7 +84,7 @@ namespace LoLitems.Content.Items.Accessory
                 ApplyBurn(target);
             }
         }
-        
+
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
