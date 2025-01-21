@@ -83,7 +83,7 @@ namespace LoLitems.Content.Items.Accessory
                 ApplyBurn(target);
             }
         }
-
+        
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();

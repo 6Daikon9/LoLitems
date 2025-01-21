@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FLQHCUS+gbs=",
+  "dgSpecHash": "5d8+Aoo68WM=",
   "success": true,
-  "projectFilePath": "D:\\asd\\LoLitems\\LoItems.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\turbi\\Desktop\\LoLitems\\LoItems.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\turbi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\turbi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\turbi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\turbi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }

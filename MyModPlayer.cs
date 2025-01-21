@@ -10,30 +10,30 @@ namespace LoLitems
 {
     public class MyModPlayer : ModPlayer
     {
-        // public float timeWithoutDamage = 0f; // Время без урона
+        public float timeWithoutDamage = 0f; // Время без урона
 
-        // // Обработчик получения урона от NPC
-        // public override void ModifyHitByNPC(NPC npc, ref Player.HurtModifiers modifiers)
-        // {
-        //     timeWithoutDamage = 0f; // Сбросить время без урона при получении урона от NPC
-        // }
-
-                public override void ModifyHitByNPC(NPC npc, ref Player.HurtModifiers modifiers)
+        // Обработчик получения урона от NPC
+        public override void ModifyHitByNPC(NPC npc, ref Player.HurtModifiers modifiers)
         {
-            // if (Player.HasAccessory<Heartsteel>())
-            // {
-            //     Player.GetModPlayer<MyModPlayer>().PostUpdateHeartSteel();
-            // }
+            timeWithoutDamage = 0f; // Сбросить время без урона при получении урона от NPC
+        }
+
+        public override void ModifyHitByNPC(NPC npc, ref Player.HurtModifiers modifiers, bool HasItem)
+        {
+            if (Player.HasItem(Heartsteel))
+            {
+                Player.GetModPlayer<MyModPlayer>().PostUpdateHeartSteel();
+            }
 
             if (Player.HasAccessory<Liandry>())
             {
                 Player.GetModPlayer<MyModPlayer>().PostUpdateLiandry();
             }
 
-            // if (Player.HasAccessory<Warmog>())
-            // {
-            //     Player.GetModPlayer<MyModPlayer>().ModifyHitByNPCWarmog();
-            // }
+            if (Player.HasAccessory<Warmog>())
+            {
+                Player.GetModPlayer<MyModPlayer>().ModifyHitByNPCWarmog();
+            }
         }
 
 // BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK-BOTRUK

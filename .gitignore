@@ -1,0 +1,19 @@
+#VS file
+.VS/
+
+#Build
+bin/
+obj/
+
+#Local settings 
+launchSettings.json
+
+#NuGet
+*.NuGet
+
+#Temp Files
+*.user
+*.lock
+*.log
+*.tmp
+*.cache
