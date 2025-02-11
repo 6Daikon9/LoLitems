@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoItems")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+566ec6d63baf644d70bbdd555743a53e97b78c5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca578d0be018fae255341b44aa874e83765faaa9")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoItems")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoItems")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
