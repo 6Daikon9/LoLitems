@@ -6,11 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Terraria">
-      <HintPath>Lib/ModLoader/Terraria.dll</HintPath>
-    </Reference>
     <Reference Include="Terraria.ModLoader">
-      <HintPath>Lib/ModLoader/tModLoader.dll</HintPath>
+      <HintPath>Lib\tModLoader\tModLoader.dll</HintPath>
     </Reference>
   </ItemGroup>
 
