@@ -23,8 +23,8 @@ namespace LoLitems.Content.Items.Accessory
         public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
         {
             // Запрещаем одновременное ношение BamiCinder и SunfireAegis
-            if ((equippedItem.type == ModContent.ItemType<BamiCinder>() && incomingItem.type == ModContent.ItemType<SunfireAegis>()) ||
-                (equippedItem.type == ModContent.ItemType<SunfireAegis>() && incomingItem.type == ModContent.ItemType<BamiCinder>()))
+            if ((equippedItem.type == ModContent.ItemType<Bamicinder>() && incomingItem.type == ModContent.ItemType<SunfireAegis>()) ||
+                (equippedItem.type == ModContent.ItemType<SunfireAegis>() && incomingItem.type == ModContent.ItemType<Bamicinder>()))
             {
                 return false; // Оба аксессуара нельзя носить вместе
             }
