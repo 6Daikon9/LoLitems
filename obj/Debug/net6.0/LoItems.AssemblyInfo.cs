@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("LoItems")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Loitems")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca578d0be018fae255341b44aa874e83765faaa9")]
-[assembly: System.Reflection.AssemblyProductAttribute("LoItems")]
-[assembly: System.Reflection.AssemblyTitleAttribute("LoItems")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5c6223611f89900f7d3106abb17358d4de4e10d")]
+[assembly: System.Reflection.AssemblyProductAttribute("Loitems")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Loitems")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

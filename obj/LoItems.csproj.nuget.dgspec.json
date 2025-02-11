@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\asd\\LoLitems\\LoItems.csproj": {}
+    "C:\\Users\\turbi\\Desktop\\LoLitems\\Loitems.csproj": {}
   },
   "projects": {
-    "D:\\asd\\LoLitems\\LoItems.csproj": {
+    "C:\\Users\\turbi\\Desktop\\LoLitems\\Loitems.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\asd\\LoLitems\\LoItems.csproj",
-        "projectName": "LoItems",
-        "projectPath": "D:\\asd\\LoLitems\\LoItems.csproj",
-        "packagesPath": "C:\\Users\\quidden\\.nuget\\packages\\",
-        "outputPath": "D:\\asd\\LoLitems\\obj\\",
+        "projectUniqueName": "C:\\Users\\turbi\\Desktop\\LoLitems\\Loitems.csproj",
+        "projectName": "Loitems",
+        "projectPath": "C:\\Users\\turbi\\Desktop\\LoLitems\\Loitems.csproj",
+        "packagesPath": "C:\\Users\\turbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\turbi\\Desktop\\LoLitems\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Visual studio\\Obchee komponenty SDK\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quidden\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\turbi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,12 +65,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
