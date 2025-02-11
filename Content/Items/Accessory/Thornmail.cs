@@ -17,8 +17,8 @@ namespace LoLitems.Content.Items.Accessory
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statDefense += 8;  // Добавляем 8 защиты
-            player.statLifeMax2 += 15;  // Увеличиваем максимальное здоровье на 15
+            player.statDefense += 15;  // Добавляем 15 защиты
+            player.statLifeMax2 += 30;  // Увеличиваем максимальное здоровье на 30
         }
 
         public override void AddRecipes()

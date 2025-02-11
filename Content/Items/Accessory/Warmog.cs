@@ -20,20 +20,20 @@ namespace LoLitems.Content.Items.Accessory
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statLifeMax2 += 100; // Увеличение максимального здоровья
+            player.statLifeMax2 += 200; // Увеличение максимального здоровья
             player.lifeRegen += player.lifeRegen; // Удваиваем регенерацию здоровья
             player.moveSpeed += 0.04f; // Увеличивает скорость передвижения на 4%
 
-            // Проверка на активность регенерации
-            if (player.GetModPlayer<MyModPlayer>().timeWithoutDamage >= regenTime)
-            {
-                // Активируем регенерацию здоровья (10% от максимального здоровья)
-                player.lifeRegen += (int)(player.statLifeMax2 * regenAmount); 
-            }
-            else
-            {
-                player.GetModPlayer<MyModPlayer>().timeWithoutDamage += 1f / 60f; // Добавляем время без урона
-            }
+            // // Проверка на активность регенерации
+            // if (player.GetModPlayer<MyModPlayer>().timeWithoutDamage >= regenTime)
+            // {
+            //     // Активируем регенерацию здоровья (10% от максимального здоровья)
+            //     player.lifeRegen += (int)(player.statLifeMax2 * regenAmount); 
+            // }
+            // else
+            // {
+            //     player.GetModPlayer<MyModPlayer>().timeWithoutDamage += 1f / 60f; // Добавляем время без урона
+            // }
         }
 
         public override void AddRecipes()

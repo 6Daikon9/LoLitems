@@ -22,7 +22,7 @@ namespace LoLitems.Content.Items.Accessory
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statLifeMax2 += 90; // Увеличение максимального здоровья
+            player.statLifeMax2 += 200; // Увеличение максимального здоровья
             player.lifeRegen += player.lifeRegen; // Удваиваем регенерацию здоровья
         }
 

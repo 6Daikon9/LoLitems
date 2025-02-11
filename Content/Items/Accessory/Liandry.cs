@@ -27,63 +27,63 @@ namespace LoLitems.Content.Items.Accessory
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetDamage(DamageClass.Magic) += 0.50f; // Увеличиваем урон магией на 50%
-            player.statLifeMax2 += 30; // Увеличиваем максимальное здоровье на 30
+            player.statLifeMax2 += 60; // Увеличиваем максимальное здоровье на 60
 
-            // Обновляем эффект горения
-            if (isBurning && burnTime > 0)
-            {
-                ApplyBurnDamage();
-            }
+            // // Обновляем эффект горения
+            // if (isBurning && burnTime > 0)
+            // {
+            //     ApplyBurnDamage();
+            // }
         }
 
-        // Метод для применения горения
-        private void ApplyBurn(NPC target)
-        {
-            if (target != null && !isBurning)
-            {
-                isBurning = true;
-                burnTime = BurnDuration;
-                burnDamage = (int)(target.lifeMax * BurnPercentage);
-                burningTarget = target;
-            }
-        }
+        // // Метод для применения горения
+        // private void ApplyBurn(NPC target)
+        // {
+        //     if (target != null && !isBurning)
+        //     {
+        //         isBurning = true;
+        //         burnTime = BurnDuration;
+        //         burnDamage = (int)(target.lifeMax * BurnPercentage);
+        //         burningTarget = target;
+        //     }
+        // }
 
-        // Метод для нанесения урона от горения
-        private void ApplyBurnDamage()
-        {
-            if (isBurning && burningTarget != null)
-            {
-                // Наносим урон от горения
-                NPC.HitInfo burnHitInfo = new NPC.HitInfo()
-                {
-                    Damage = burnDamage,
-                    Crit = false,
-                    DamageType = DamageClass.Magic,
-                    HideCombatText = false,
-                    HitDirection = 0,
-                    Knockback = 0
-                };
+        // // Метод для нанесения урона от горения
+        // private void ApplyBurnDamage()
+        // {
+        //     if (isBurning && burningTarget != null)
+        //     {
+        //         // Наносим урон от горения
+        //         NPC.HitInfo burnHitInfo = new NPC.HitInfo()
+        //         {
+        //             Damage = burnDamage,
+        //             Crit = false,
+        //             DamageType = DamageClass.Magic,
+        //             HideCombatText = false,
+        //             HitDirection = 0,
+        //             Knockback = 0
+        //         };
 
-                burningTarget.StrikeNPC(burnHitInfo);
+        //         burningTarget.StrikeNPC(burnHitInfo);
 
-                burnTime--;
+        //         burnTime--;
 
-                // Прекращаем горение, если время истекло
-                if (burnTime <= 0)
-                {
-                    isBurning = false;
-                    burningTarget = null;
-                }
-            }
-        }
+        //         // Прекращаем горение, если время истекло
+        //         if (burnTime <= 0)
+        //         {
+        //             isBurning = false;
+        //             burningTarget = null;
+        //         }
+        //     }
+        // }
 
-        public override void ModifyHitNPCWithProj(Projectile proj, NPC target, ref NPC.HitModifiers modifiers)
-        {
-            if (proj.DamageType == DamageClass.Magic)
-            {
-                ApplyBurn(target);
-            }
-        }
+        // public override void ModifyHitNPCWithProj(Projectile proj, NPC target, ref NPC.HitModifiers modifiers)
+        // {
+        //     if (proj.DamageType == DamageClass.Magic)
+        //     {
+        //         ApplyBurn(target);
+        //     }
+        // }
 
         public override void AddRecipes()
         {
