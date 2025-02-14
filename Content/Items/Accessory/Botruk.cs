@@ -18,21 +18,21 @@ namespace LoLitems.Content.Items.Accessory
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetDamage(DamageClass.Melee) += 0.30f; // Увеличивает урон ближнего боя на 20%
-            player.GetDamage(DamageClass.Ranged) += 0.20f; // Увеличивает урон дальнего боя на 20%
-            player.GetDamage(DamageClass.Summon) += 0.20f; // Увеличивает урон от призванных существ на 20%
-            player.GetDamage(DamageClass.Throwing) += 0.20f; // Увеличивает урон метательными оружиями на 20%
+            player.GetDamage(DamageClass.Melee) += 0.30f; // Increases melee damage by 20%
+            player.GetDamage(DamageClass.Ranged) += 0.20f; // Increases ranged damage by 20%
+            player.GetDamage(DamageClass.Summon) += 0.20f; // Increases damage from summoned creatures by 20%
+            player.GetDamage(DamageClass.Throwing) += 0.20f; // Increases the damage of throwing weapons by 20%
             
-            player.GetAttackSpeed(DamageClass.Melee) += 0.25f; // Увеличивает скорость атаки ближнего боя на 25%
-            player.GetAttackSpeed(DamageClass.Ranged) += 0.25f; // Увеличивает скорость атаки дальнего боя на 25%
+            player.GetAttackSpeed(DamageClass.Melee) += 0.25f; // Increases melee attack speed by 25%
+            player.GetAttackSpeed(DamageClass.Ranged) += 0.25f; // Increases ranged attack speed by 25%
             // player.GetModPlayer<MyModPlayer>().lifeSteal += 0.10f; // +10% лайфстила
         }
 
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.IronPickaxe, 1);  // Железная кирка
-            recipe.AddIngredient(ItemID.IronBroadsword, 2); // Железные мечи
+            recipe.AddIngredient(ItemID.IronPickaxe, 1);
+            recipe.AddIngredient(ItemID.IronBroadsword, 2);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
         }

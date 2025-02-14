@@ -20,9 +20,9 @@ namespace LoLitems.Content.Items.Accessory
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statLifeMax2 += 200; // Увеличение максимального здоровья
-            player.lifeRegen += player.lifeRegen; // Удваиваем регенерацию здоровья
-            player.moveSpeed += 0.04f; // Увеличивает скорость передвижения на 4%
+            player.statLifeMax2 += 200; // Increase maximum health by 200
+            player.lifeRegen += player.lifeRegen; // Double the health regeneration
+            player.moveSpeed += 0.04f; // Increases movement speed by 4%
 
             // // Проверка на активность регенерации
             // if (player.GetModPlayer<MyModPlayer>().timeWithoutDamage >= regenTime)

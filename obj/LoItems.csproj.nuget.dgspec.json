@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\turbi\\Desktop\\LoLitems\\Loitems.csproj": {}
+    "C:\\Users\\turbi\\Desktop\\LoLitems\\LoItems.csproj": {}
   },
   "projects": {
-    "C:\\Users\\turbi\\Desktop\\LoLitems\\Loitems.csproj": {
+    "C:\\Users\\turbi\\Desktop\\LoLitems\\LoItems.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\turbi\\Desktop\\LoLitems\\Loitems.csproj",
-        "projectName": "Loitems",
-        "projectPath": "C:\\Users\\turbi\\Desktop\\LoLitems\\Loitems.csproj",
+        "projectUniqueName": "C:\\Users\\turbi\\Desktop\\LoLitems\\LoItems.csproj",
+        "projectName": "LoItems",
+        "projectPath": "C:\\Users\\turbi\\Desktop\\LoLitems\\LoItems.csproj",
         "packagesPath": "C:\\Users\\turbi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\turbi\\Desktop\\LoLitems\\obj\\",
         "projectStyle": "PackageReference",

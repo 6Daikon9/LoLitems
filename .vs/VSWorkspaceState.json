@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Content",
+    "\\Content\\Items",
+    "\\Content\\Items\\Accessory"
   ],
+  "SelectedNode": "\\Content\\Items\\Accessory\\GiantBelt.cs",
   "PreviewInSolutionExplorer": false
 }

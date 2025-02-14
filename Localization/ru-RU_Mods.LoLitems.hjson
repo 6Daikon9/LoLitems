@@ -1,11 +1,27 @@
 Items: {
-	Thornmail: {
-		DisplayName: Thornmail
+	BamiCinder: {
+		DisplayName: Bami Cinder
 		Tooltip:
-			'''
-			8 deffence 
-			When struck by a basic attack on-hit, deal 20 (+ 10% bonus armor)
-			'''
+		'''
+		30 health 
+		'''
+	}
+	
+	Botruk: {
+		DisplayName: Botruk
+		Tooltip: 
+		'''
+		+20% non magic damage
+		+25% attack speed
+		'''
+	}
+	
+	ChainVest: {
+		DisplayName: Chain Vest
+		Tooltip: 
+		'''
+		8 defenses
+		'''
 	}
 
 	FrozenHeart: {
@@ -17,12 +33,48 @@ Items: {
 		'''
 	}
 
-	Heartsteel: {
+	GiantBelt: {
+		DisplayName: Giant Belt
+		Tooltip:
+		'''
+		70 Health
+		'''
+	}
+
+	HeartSteel: {
 		DisplayName: Heartsteel
 		Tooltip: 
 		'''
-		90 health
+		180 health
 		+100% base health regeneration
+		'''
+	}
+
+	Liandry: {
+		DisplayName: Liandry's Torment
+		Tooltip: 
+		'''
+		+50% magic damage
+		30 health
+		'''
+	}
+		
+	SunfireAegis: {
+		DisplayName: Sunfire Aegis
+		Tooltip:
+		'''
+		10 deffence 
+		70 health
+		'''
+	}
+
+	Thornmail: {
+		DisplayName: Thornmail
+		Tooltip:
+		'''
+		15 deffence
+		70 health 
+		When struck by a basic attack on-hit, deal 20 (+ 10% bonus armor)
 		'''
 	}
 
@@ -30,17 +82,16 @@ Items: {
 		DisplayName: Warmog
 		Tooltip: 
 		'''
-		100 health
+		200 health
 		+100% base health regeneration
 		'''
 	}
-
-	Botruk: {
-		DisplayName: Botruk
-		Tooltip: 
-		'''
-		+20% non magic damage
-		+25% attack speed
-		'''
-	}
 }
+
+#all damage
+#attack speed
+#armor
+#Heasth
+#Health regeneration
+#Mana
+#Mana regeneration

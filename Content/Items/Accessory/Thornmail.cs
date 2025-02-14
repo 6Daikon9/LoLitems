@@ -17,8 +17,8 @@ namespace LoLitems.Content.Items.Accessory
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statDefense += 15;  // Добавляем 15 защиты
-            player.statLifeMax2 += 30;  // Увеличиваем максимальное здоровье на 30
+            player.statDefense += 15;  // Adds 15 defenses (armor)
+            player.statLifeMax2 += 70;  // Increase maximum health by 70
         }
 
         public override void AddRecipes()
@@ -30,5 +30,29 @@ namespace LoLitems.Content.Items.Accessory
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
         }
+
+        // Применение урона при получении удара
+// //         public void ApplyOnHitDamage()
+// //         {
+// //             if (attacker != null && receivedBasicAttack)
+// //             {
+// //                 int armorBonus = (int)(player.statDefense * 0.1f);  // 10% от брони
+// //                 int totalDamage = 20 + armorBonus;  // Базовый урон + бонус от брони
+
+// //                 // Создаём HitInfo для нанесения урона
+// //                 NPC.HitInfo hitInfo = new NPC.HitInfo()
+// //                 {
+// //                     Damage = totalDamage,  // Урон
+// //                     Crit = false,  // Без крита
+// //                     DamageType = DamageClass.Default,  // Тип урона
+// //                     HideCombatText = false,  // Показывать текст урона
+// //                     HitDirection = 0,  // Направление отталкивания
+// //                     InstantKill = false,  // Не используется для обычных атак
+// //                     Knockback = 0  // Без отталкивания
+// //                 };
+
+// //                 // Наносим урон NPC
+// //                 attacker.StrikeNPC(hitInfo);
+// //             }
     }
 }

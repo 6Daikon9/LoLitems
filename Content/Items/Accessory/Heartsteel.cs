@@ -4,10 +4,10 @@ using Terraria.ModLoader;
 
 namespace LoLitems.Content.Items.Accessory
 {	
-    public class Heartsteel : ModItem
+    public class HeartSteel : ModItem
     {
         // private const float DetectionRadius = 700f; // Радиус обнаружения врагов
-        private const float HealthPercentage = 0.12f; // 12% от максимального здоровья
+        private const float HealthPercentage = 0.12f; // 12% of maximum health
 
         public override void SetDefaults()
         {
@@ -20,8 +20,8 @@ namespace LoLitems.Content.Items.Accessory
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statLifeMax2 += 200; // Увеличение максимального здоровья
-            player.lifeRegen += player.lifeRegen; // Удваиваем регенерацию здоровья
+            player.statLifeMax2 += 180; // Increase maximum health by 180
+            player.lifeRegen += player.lifeRegen; // Double the health regeneration
         }
 
         public override void AddRecipes()

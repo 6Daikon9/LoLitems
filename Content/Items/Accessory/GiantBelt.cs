@@ -6,7 +6,7 @@ using Terraria.Localization;
 
 namespace LoLitems.Content.Items.Accessory
 {	
-	public class Giantbelt : ModItem
+	public class GiantBelt : ModItem
     {
         public override void SetDefaults()
         {

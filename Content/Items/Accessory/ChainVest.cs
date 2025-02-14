@@ -2,9 +2,10 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
+
 namespace LoLitems.Content.Items.Accessory
-{
-    public class BamiCinder : ModItem
+{	
+	public class ChainVest : ModItem
     {
         public override void SetDefaults()
         {
@@ -12,18 +13,17 @@ namespace LoLitems.Content.Items.Accessory
             Item.height = 32;
             Item.accessory = true;
             Item.rare = 3;
-            Item.value = Item.sellPrice(gold: 1);
+            Item.value = Item.sellPrice(gold: 1); 
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statLifeMax2 += 30; // Increase maximum health by 30
+            player.statDefense += 8; // Adds 8 defenses (armor)
         }
-
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.LifeCrystal, 1);
+            recipe.AddIngredient(ItemID.IronBar, 10);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
         }

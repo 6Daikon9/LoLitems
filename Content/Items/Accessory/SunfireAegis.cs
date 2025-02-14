@@ -17,25 +17,15 @@ namespace LoLitems.Content.Items.Accessory
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statLifeMax2 += 50; // Увеличиваем максимальное здоровье на 50
-        }
-
-        public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
-        {
-            // Запрещаем одновременное ношение BamiCinder и SunfireAegis
-            if ((equippedItem.type == ModContent.ItemType<Bamicinder>() && incomingItem.type == ModContent.ItemType<SunfireAegis>()) ||
-                (equippedItem.type == ModContent.ItemType<SunfireAegis>() && incomingItem.type == ModContent.ItemType<Bamicinder>()))
-            {
-                return false; // Оба аксессуара нельзя носить вместе
-            }
-
-            return true; // Если конфликтов нет, разрешаем экипировку
+            player.statLifeMax2 += 70; // Increase maximum health by 70
+            player.statDefense += 10; // Adds 10 defense (armor)
         }
 
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.LifeCrystal, 1);
+            recipe.AddIngredient(ModContent.ItemType<BamiCinder>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<ChainVest>(), 1);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
         }

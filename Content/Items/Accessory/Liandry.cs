@@ -25,8 +25,8 @@ namespace LoLitems.Content.Items.Accessory
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetDamage(DamageClass.Magic) += 0.50f; // Увеличиваем урон магией на 50%
-            player.statLifeMax2 += 60; // Увеличиваем максимальное здоровье на 60
+            player.GetDamage(DamageClass.Magic) += 0.50f; // Increase magic damage by 50%.
+            player.statLifeMax2 += 60; // Increase maximum health by 60
 
             // // Обновляем эффект горения
             // if (isBurning && burnTime > 0)
